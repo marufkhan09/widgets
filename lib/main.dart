@@ -4,6 +4,9 @@ void main() {
   runApp(MaterialApp(
     title: 'Widgets',
     home: Scaffold(
+      appBar: AppBar(
+        title: Text('Row'),
+      ),
       body: Home(),
     ),
   ));
@@ -14,30 +17,21 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-      height: 200,
-      width: 200,
-      child: Text('hello',
-      style: TextStyle(
-          color: Colors.white,
-      ),),
-      alignment: Alignment.center,
-      margin: EdgeInsets.fromLTRB(100, 40, 20, 0),
-      padding: EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: Colors.grey[900],
-        shape: BoxShape.rectangle,
-        border: Border.all(
-          color: Colors.amber,
-          width: 5,
-        )
-
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Text('hello'),
+      Text('hello'),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Text('hello'),
+      Text('hello'),
+    ],
       ),
-      transform: Matrix4.rotationZ(.2),
-
-
-
+      Text('hello'),
+      Text('hello'),
+    ],
     );
   }
 }
