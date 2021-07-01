@@ -20,250 +20,37 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  List<int> list = [];
+  @override
+  void initState() {
+    super.initState();
+    for(int i =0;i<=50; i++){
+      list.add(i);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
+    return ListView.builder(itemBuilder: (BuildContext cx, int index){
+      return ListTile(
+        title: Text('Item ${list[index]}'),
+        leading: Container(
+          height: 40,
+          width: 40,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.black,
           ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          subtitle: Text('ListViewDemo2'),
-          contentPadding: EdgeInsets.fromLTRB(16, 20, 16, 20),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
 
-          title: Text('ListViewDemo2'),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
         ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
+        trailing: Icon(
+          Icons.arrow_forward_ios,
         ),
-        ListTile(
-          title: Text('ListViewDemo2'),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-        ListTile(
-          title: Text('ListViewDemo3'),
-          leading: Container(
-            height: 35,
-            width: 35,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black,
-            ),
-          ),
-          trailing: Icon(Icons.arrow_forward_ios),
-        ),
-      ],
-    );
+      );
+    });
   }
 }
+
 
 
